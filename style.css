@@ -1,0 +1,107 @@
+body{
+    background-color: hotpink;
+    font-family:didot;
+}
+
+h1{
+   color:white;
+   text-align:center;
+   font-size:50px;
+}
+
+.menu *{
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+
+a:link{
+    color: white
+
+}
+
+a:visited{
+    color: white
+}
+
+img{
+    width:300px;
+    height:300px;
+}
+
+
+#icon{
+    width: 50px;
+    height:50px;
+}
+
+.header{
+    /*display: flex;
+    justify-content: center;*/
+    background-color:blueviolet;
+    font-family: 'Fascinate', cursive;
+    /*padding-left:50px;*/
+    float: none;
+    text-align: center;
+    padding:20px 20px;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    0%   {top: 0px;}
+    25%  {top: 200px;}
+    50%  {top: 100px;}
+    75%  {top: 200px;}
+    100% {top: 0px;}
+  }
+
+.grid{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer{
+    display:flex;
+    justify-content:center;
+    padding-top: 100px;
+}
+
+.menu{
+    text-decoration: none;
+}
+
+.item{
+    font-size:20px;
+    position: relative;
+}
+
+.item p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    color: white;
+    opacity: 0;
+    text-align: center;
+}
+
+.item:hover p{
+    opacity:1;
+    border: 5px lightgoldenrodyellow solid;
+    padding: 5px;
+    transition: 0.3s ease;
+}
+
+.item:hover img{
+    opacity:0.35;
+    transition: 0.3s ease;
+}
+
+.profile{
+    padding-left:100px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
